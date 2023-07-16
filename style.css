@@ -219,6 +219,45 @@ header nav ul li a {
 }
 /* some fact section style adding ............. */
 
+.sponser_section {
+    margin-bottom: 100px;
+}
+
+.sponser_section .sponser_text{
+    text-align: center;
+    margin-top: 150px;
+}
+
+
+.sponsers_img img {
+    width: 12%;
+}
+
+.sponsers_img {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+/* sponsers section style adding ............... */
+
+/* footer section style adding ................. */
+
+footer p {
+    padding: 50px 0;
+    border-radius: 8px;
+    background: #FFF4E7;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+footer {
+    margin-bottom: 200px;
+}
+/* footer section style adding ................. */
+
+/* sponsers section style adding ............... */
+
 
 /* responsive code >>>>>>>>>>>>>>>> */
 
@@ -305,3 +344,34 @@ header nav ul li a {
    }
 
 }
+
+/* for medium device.......... responsive */
+@media screen and (min-width: 568px) and (max-width: 900px) {
+
+    header {
+        overflow: hidden;
+    }
+
+    .section_padding {
+        padding: 0 0px;
+    }
+
+
+    header nav {
+        flex-direction: column;
+    }
+
+    .nav_section {
+        margin-top: 20px;
+    }
+
+    .feature_container {
+        flex-direction: column;
+    }
+
+    .section_padding {
+        padding: 30px;
+    }
+
+}
+/* for medium device.......... responsive */
