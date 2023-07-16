@@ -29,12 +29,15 @@
     line-height: 1.5rem;
     margin-bottom: 30px;
 }
+
+.section_padding {
+    padding: 0 150px;
+}
 /* common style >>>>>>>>>>>>>>>>> */
 
 
 header {
     background: rgba(255, 144, 14, 0.10);
-    padding: 0 150px;
 }
 
 header nav{
@@ -92,14 +95,6 @@ header nav ul li a {
     width: 100%;
 }
 
-.architect_img img {
-    width: 100%;
-}
-
-main {
-    padding: 0px 150px;
-}
-
 .feature_container {
     display: flex;
     justify-content: space-between;
@@ -133,14 +128,104 @@ main {
     color: #FF900E;
 }
 
-/*  */
+/* cards of features section style adding  */
+.cards_of_features_section {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    margin-top: 100px;
+}
+
+.cards_content {
+    width: 60%;
+}
+
+
+.architect_img img {
+    width: 100%;
+}
+
+.cards_content_title {
+    padding-left: 20px;
+    border-left: 5px solid #FF900E;
+}
+
+.cards_container {
+    margin-top: 30px;
+}
+
+.cards_container .card {
+    padding: 20px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.card_caption {
+    margin: 10px;
+    margin-top: 0;
+}
+
+.architect_img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card_description {
+    font-size: .9rem;
+    line-height: 1.3rem;
+}
+
+.architect_img .ten_years_tag {
+    width: 15vw;
+    background-color: #FF900E;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 8px;
+    position: relative;
+    bottom: 8%;
+    left: -11%;
+}
+
+.ten_years_tag h1 {
+    font-size: 2.5rem;
+}
+/* cards of features section style adding  */
+
+/* some fact section style adding ............. */
+.some_fact_section {
+    margin-top: 100px;
+}
+
+.facts_contents {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+}
+
+.facts_card {
+    border: 2px solid #ec9f46;
+    padding: 40px 0px;
+    text-align: center;
+    width: 17%;
+    border-radius: 8px;
+}
+
+.fact_count {
+    font-size: 2rem;
+    margin: 7px 0;
+}
+/* some fact section style adding ............. */
+
+
 /* responsive code >>>>>>>>>>>>>>>> */
 
 @media screen and (max-width: 567px) {
 
-    header {
+    .section_padding {
         padding: 0 20px;
-        width: 100%;
     }
 
     header nav {
@@ -168,7 +253,6 @@ main {
     }
 
     main {
-        padding: 20px;
         width: 100%;
     }
 
@@ -184,5 +268,40 @@ main {
         font-size: 1rem;
         padding: 15px 25px;
     }
+
+    .cards_of_features_section {
+       display: block;
+    }
+
+   .cards_content {
+        width: auto;
+   }
+
+
+   .architect_img {
+        position: relative;
+   }
+
+   .architect_img .ten_years_tag{
+        padding: 20px;
+        width: 20vh;
+        bottom: 33px;
+        margin: 0 auto;
+   }
+
+   .ten_years_tag h1 {
+        font-size: 5vw;
+   }
+
+   .facts_contents {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 25px;
+   }
+
+   .facts_card {
+        width: 80%;
+   }
 
 }
